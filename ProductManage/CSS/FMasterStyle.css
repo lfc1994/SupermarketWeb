@@ -1,0 +1,44 @@
+﻿/****前台样式表****/
+body{font-family:"Microsoft Yahei",Verdana,Simsun,"Segoe UI Web Light","Segoe UI Light","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","Helvetica Neue",Arial;
+font-size:12px;margin: 0 auto; background-color:#FFFFFF;
+/*滚动条样式*/
+scrollbar-3dlight-color:#D4D0C8; /*- 最外左 -*/
+scrollbar-highlight-color:#fff; /*- 左二 -*/
+scrollbar-face-color:#E4E4E4; /*- 面子 -*/
+scrollbar-arrow-color:#666; /*- 箭头 -*/
+scrollbar-shadow-color:#808080; /*- 右二 -*/
+scrollbar-darkshadow-color:#D7DCE0; /*- 右一 -*/
+scrollbar-base-color:#D7DCE0; /*- 基色 -*/
+scrollbar-track-color:#;/*- 滑道 -*/
+}
+/* 页面封装器 */
+#wrapper{width:1002px;margin:0 auto;text-align:left;border:solid 1px black;overflow:hidden; clear:both;}
+/* 未被访问的链接 蓝色 */
+a:link{color: blue;}
+/* 已被访问过的链接 绿色 */
+a:visited{color: green;}
+/* 鼠标悬浮在上的链接 红色 */
+a:hover{color: red;}
+/* 鼠标点中激活链接 紫色 */
+a:active{color:Purple;}
+/*页头*/ 
+
+#headerleft{width:1002px;float:left;height:566px; margin:0; border:0;background-image:url(../Img/主页.png); background-repeat:no-repeat;}                 
+#headermiddle{width:318px; float:left;height:58px;margin:0; padding:0; border:0; text-align:left;}
+#headermiddle ul{width:318px; height:58px;list-style: none; border:0; padding:0; margin:0; vertical-align:middle; text-align:left;}
+#headermiddle ul li{float:left;margin-top:20px; text-align:left; vertical-align:middle; font-size:12px;}
+#headerright{width:343px;height:58px;float:left;font-size:12px;overflow:hidden;text-align:right;margin:0; padding:0; border:0;}  
+.logoutstyle{text-decoration:none; font-weight:bold;}
+.logoutstyle1{text-decoration:none;}
+/*主体*/
+#content{width:1002px; height:460px;font-size:12px; float:left; margin:0; border:0; padding:0;background-image:url(../Img/pic/格子.jpg);}
+#mainmenu{width:1002px;height:30px;float:left; background-repeat:no-repeat;
+          background-image:url(../Img/menu/menubg.png); padding:0; border:0;}
+
+/*页脚*/
+#footer{width:1002px;font-size:12px;float:left; margin:0;height:40px;padding-top:14px;background-color:rgba(255,200,220,0.5);}
+#footerlnk{text-align:center; float:left;}
+#footerline{background-image:url(../Img/index/footerline.jpg); background-repeat:repeat-x; height:14px;}
+#copyrightinfo{text-align:center; height:30px; font-size:12px; background-color:#004185; vertical-align:middle; padding-top:12px; color:#272727;}
+
+

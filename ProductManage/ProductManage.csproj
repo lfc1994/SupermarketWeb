@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06093B15-C550-4B7D-AE84-6FBE5AAF5779}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductManage</RootNamespace>
+    <AssemblyName>ProductManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\..\..\第六课\下午_后台产品列表和修改\ProductProc\ProductProc\ProductManage\bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="ZLTextBox">
+      <HintPath>..\..\..\第六课\下午_后台产品列表和修改\ProductProc\ProductProc\ProductManage\bin\ZLTextBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OrderInfo.aspx.cs">
+      <DependentUpon>OrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OrderInfo.aspx.designer.cs">
+      <DependentUpon>OrderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProductManageList.aspx.cs">
+      <DependentUpon>ProductManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProductManageList.aspx.designer.cs">
+      <DependentUpon>ProductManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShowPicture.aspx.cs">
+      <DependentUpon>ShowPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShowPicture.aspx.designer.cs">
+      <DependentUpon>ShowPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateProduct.aspx.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateProduct.aspx.designer.cs">
+      <DependentUpon>UpdateProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Com\ComClass.cs" />
+    <Compile Include="Control\AdUserInfoDAL.cs" />
+    <Compile Include="Control\ComUserInfoDAL.cs" />
+    <Compile Include="Control\ProductCategoryDAL.cs" />
+    <Compile Include="Control\ProductsDAL.cs" />
+    <Compile Include="Control\SQLHelper.cs" />
+    <Compile Include="Modal\AdUserInfo.cs" />
+    <Compile Include="Modal\ComUserInfo.cs" />
+    <Compile Include="Modal\Order.cs" />
+    <Compile Include="Modal\ProductCategory.cs" />
+    <Compile Include="Modal\Products.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerifycodeAdmin.aspx.cs">
+      <DependentUpon>VerifycodeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerifycodeAdmin.aspx.designer.cs">
+      <DependentUpon>VerifycodeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\FMaster.Master.cs">
+      <DependentUpon>FMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\FMaster.Master.designer.cs">
+      <DependentUpon>FMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\OrderInfo.aspx" />
+    <Content Include="Admin\ProductManageList.aspx" />
+    <Content Include="Admin\ShowPicture.aspx" />
+    <Content Include="Admin\UpdateProduct.aspx" />
+    <Content Include="CSS\FMasterStyle.css" />
+    <Content Include="CSS\IndexStyle.css" />
+    <Content Include="CSS\ProductStyle.css" />
+    <Content Include="Img\bkimg\add.png" />
+    <Content Include="Img\bkimg\calcprice.png" />
+    <Content Include="Img\bkimg\cancelcheckbtn.png" />
+    <Content Include="Img\bkimg\cancelpublishbtn.png" />
+    <Content Include="Img\bkimg\checkbtn.png" />
+    <Content Include="Img\bkimg\cleanall.png" />
+    <Content Include="Img\bkimg\close.png" />
+    <Content Include="Img\bkimg\delete.png" />
+    <Content Include="Img\bkimg\delteall.png" />
+    <Content Include="Img\bkimg\disablestatusbtn.png" />
+    <Content Include="Img\bkimg\enablestatusbtn.png" />
+    <Content Include="Img\bkimg\excel.png" />
+    <Content Include="Img\bkimg\female.png" />
+    <Content Include="Img\bkimg\man.png" />
+    <Content Include="Img\bkimg\nosubmit.png" />
+    <Content Include="Img\bkimg\order\cancelcheck.jpg" />
+    <Content Include="Img\bkimg\order\cancelcheck1.jpg" />
+    <Content Include="Img\bkimg\order\cancelpayment.jpg" />
+    <Content Include="Img\bkimg\order\cancelpayment1.jpg" />
+    <Content Include="Img\bkimg\order\cancelsendgood.jpg" />
+    <Content Include="Img\bkimg\order\cancelsendgood1.jpg" />
+    <Content Include="Img\bkimg\order\cancelsign.jpg" />
+    <Content Include="Img\bkimg\order\cancelsign1.jpg" />
+    <Content Include="Img\bkimg\order\cancelsubmit.jpg" />
+    <Content Include="Img\bkimg\order\cancelsubmit1.jpg" />
+    <Content Include="Img\bkimg\order\check.jpg" />
+    <Content Include="Img\bkimg\order\check1.jpg" />
+    <Content Include="Img\bkimg\order\payment.jpg" />
+    <Content Include="Img\bkimg\order\payment1.jpg" />
+    <Content Include="Img\bkimg\order\sendgood.jpg" />
+    <Content Include="Img\bkimg\order\sendgood1.jpg" />
+    <Content Include="Img\bkimg\order\sign.jpg" />
+    <Content Include="Img\bkimg\order\sign1.jpg" />
+    <Content Include="Img\bkimg\outxls.png" />
+    <Content Include="Img\bkimg\publishbtn.png" />
+    <Content Include="Img\bkimg\reset.png" />
+    <Content Include="Img\bkimg\return.png" />
+    <Content Include="Img\bkimg\save.png" />
+    <Content Include="Img\bkimg\search.png" />
+    <Content Include="Img\bkimg\sectedall.png" />
+    <Content Include="Img\bkimg\select.png" />
+    <Content Include="Img\bkimg\submit.png" />
+    <Content Include="Img\bkimg\txtlog.png" />
+    <Content Include="Img\bkimg\update.png" />
+    <Content Include="Img\bkimg\upload.png" />
+    <Content Include="Img\company_certifi\BusinessLicence.jpg" />
+    <Content Include="Img\company_certifi\ChinaOrganizations.jpg" />
+    <Content Include="Img\company_certifi\CreditCardCode.jpg" />
+    <Content Include="Img\company_certifi\OpenLicence.jpg" />
+    <Content Include="Img\company_certifi\TaxRegistrationCertificate.jpg" />
+    <Content Include="Img\company_certifi\thumbnail\BusinessLicence.jpg" />
+    <Content Include="Img\company_certifi\thumbnail\ChinaOrganizations.jpg" />
+    <Content Include="Img\company_certifi\thumbnail\CreditCardCode.jpg" />
+    <Content Include="Img\company_certifi\thumbnail\OpenLicence.jpg" />
+    <Content Include="Img\company_certifi\thumbnail\TaxRegistrationCertificate.jpg" />
+    <Content Include="Img\contact\1.gif" />
+    <Content Include="Img\contact\2.gif" />
+    <Content Include="Img\contact\3.gif" />
+    <Content Include="Img\contact\4.gif" />
+    <Content Include="Img\contact\5.gif" />
+    <Content Include="Img\contact\6.gif" />
+    <Content Include="Img\contact\7.gif" />
+    <Content Include="Img\contact\8.gif" />
+    <Content Include="Img\contact\9.gif" />
+    <Content Include="Img\contact\commap.jpg" />
+    <Content Include="Img\contact\contactus.jpg" />
+    <Content Include="Img\copyright\copyright.jpg" />
+    <Content Include="Img\customer\addmsg.jpg" />
+    <Content Include="Img\customer\addmsg1.jpg" />
+    <Content Include="Img\customer\city.gif" />
+    <Content Include="Img\customer\clear.jpg" />
+    <Content Include="Img\customer\clear1.jpg" />
+    <Content Include="Img\customer\customerfeedbacktl.jpg" />
+    <Content Include="Img\customer\email.gif" />
+    <Content Include="Img\customer\feedbkmsg.jpg" />
+    <Content Include="Img\customer\feedbkmsg1.jpg" />
+    <Content Include="Img\customer\female.png" />
+    <Content Include="Img\customer\findpwd.jpg" />
+    <Content Include="Img\customer\findpwd1.jpg" />
+    <Content Include="Img\customer\improve.jpg" />
+    <Content Include="Img\customer\man.png" />
+    <Content Include="Img\customer\myagree.jpg" />
+    <Content Include="Img\customer\myagree1.jpg" />
+    <Content Include="Img\customer\mydisagree.jpg" />
+    <Content Include="Img\customer\mydisagree1.jpg" />
+    <Content Include="Img\customer\qq.gif" />
+    <Content Include="Img\customer\reset.jpg" />
+    <Content Include="Img\customer\reset1.jpg" />
+    <Content Include="Img\customer\retrievepwd.jpg" />
+    <Content Include="Img\customer\updatepwd.jpg" />
+    <Content Include="Img\customer\updatepwd1.jpg" />
+    <Content Include="Img\customer\updatepwdtl.jpg" />
+    <Content Include="Img\customer\userreg.jpg" />
+    <Content Include="Img\customer\userreg1.jpg" />
+    <Content Include="Img\customer\userregist.jpg" />
+    <Content Include="Img\customer\viewmsg.jpg" />
+    <Content Include="Img\customer\viewmsg1.jpg" />
+    <Content Include="Img\err\error.jpg" />
+    <Content Include="Img\err\ieerror.jpg" />
+    <Content Include="Img\face\NO.gif" />
+    <Content Include="Img\face\OK.gif" />
+    <Content Include="Img\face\偷笑.gif" />
+    <Content Include="Img\face\傲慢.gif" />
+    <Content Include="Img\face\再见.gif" />
+    <Content Include="Img\face\凝问.gif" />
+    <Content Include="Img\face\发怒.gif" />
+    <Content Include="Img\face\可怜.gif" />
+    <Content Include="Img\face\可爱.gif" />
+    <Content Include="Img\face\困.gif" />
+    <Content Include="Img\face\委屈.gif" />
+    <Content Include="Img\face\尴尬.gif" />
+    <Content Include="Img\face\差劲.gif" />
+    <Content Include="Img\face\弱.gif" />
+    <Content Include="Img\face\强.gif" />
+    <Content Include="Img\face\微笑.gif" />
+    <Content Include="Img\face\快哭了.gif" />
+    <Content Include="Img\face\惊恐.gif" />
+    <Content Include="Img\face\抓狂.gif" />
+    <Content Include="Img\face\抱拳.gif" />
+    <Content Include="Img\face\握手.gif" />
+    <Content Include="Img\face\敲打.gif" />
+    <Content Include="Img\face\晕.gif" />
+    <Content Include="Img\face\流汗.gif" />
+    <Content Include="Img\face\白眼.gif" />
+    <Content Include="Img\face\礼物.gif" />
+    <Content Include="Img\face\鄙视.gif" />
+    <Content Include="Img\face\难过.gif" />
+    <Content Include="Img\face\高兴.gif" />
+    <Content Include="Img\face\鼓掌.gif" />
+    <Content Include="Img\head\1.bmp" />
+    <Content Include="Img\head\10.bmp" />
+    <Content Include="Img\head\11.bmp" />
+    <Content Include="Img\head\12.bmp" />
+    <Content Include="Img\head\13.bmp" />
+    <Content Include="Img\head\14.bmp" />
+    <Content Include="Img\head\15.bmp" />
+    <Content Include="Img\head\16.bmp" />
+    <Content Include="Img\head\17.bmp" />
+    <Content Include="Img\head\18.bmp" />
+    <Content Include="Img\head\19.bmp" />
+    <Content Include="Img\head\2.bmp" />
+    <Content Include="Img\head\20.bmp" />
+    <Content Include="Img\head\21.bmp" />
+    <Content Include="Img\head\22.bmp" />
+    <Content Include="Img\head\23.bmp" />
+    <Content Include="Img\head\24.bmp" />
+    <Content Include="Img\head\25.bmp" />
+    <Content Include="Img\head\26.bmp" />
+    <Content Include="Img\head\27.bmp" />
+    <Content Include="Img\head\28.bmp" />
+    <Content Include="Img\head\29.bmp" />
+    <Content Include="Img\head\3.bmp" />
+    <Content Include="Img\head\30.bmp" />
+    <Content Include="Img\head\31.bmp" />
+    <Content Include="Img\head\32.bmp" />
+    <Content Include="Img\head\33.bmp" />
+    <Content Include="Img\head\34.bmp" />
+    <Content Include="Img\head\35.bmp" />
+    <Content Include="Img\head\36.bmp" />
+    <Content Include="Img\head\37.bmp" />
+    <Content Include="Img\head\38.bmp" />
+    <Content Include="Img\head\39.bmp" />
+    <Content Include="Img\head\4.bmp" />
+    <Content Include="Img\head\40.bmp" />
+    <Content Include="Img\head\41.bmp" />
+    <Content Include="Img\head\42.bmp" />
+    <Content Include="Img\head\43.bmp" />
+    <Content Include="Img\head\44.bmp" />
+    <Content Include="Img\head\45.bmp" />
+    <Content Include="Img\head\46.bmp" />
+    <Content Include="Img\head\47.bmp" />
+    <Content Include="Img\head\48.bmp" />
+    <Content Include="Img\head\49.bmp" />
+    <Content Include="Img\head\5.bmp" />
+    <Content Include="Img\head\50.bmp" />
+    <Content Include="Img\head\6.bmp" />
+    <Content Include="Img\head\7.bmp" />
+    <Content Include="Img\head\8.bmp" />
+    <Content Include="Img\head\9.bmp" />
+    <Content Include="Img\honor\certificate.png" />
+    <Content Include="Img\honor\history.png" />
+    <Content Include="Img\honor\honor.jpg" />
+    <Content Include="Img\index\1.png" />
+    <Content Include="Img\index\2.png" />
+    <Content Include="Img\index\3.png" />
+    <Content Include="Img\index\4.png" />
+    <Content Include="Img\index\aboutus.jpg" />
+    <Content Include="Img\index\brower.jpg" />
+    <Content Include="Img\index\contact.jpg" />
+    <Content Include="Img\index\footer.png" />
+    <Content Include="Img\index\footerline.jpg" />
+    <Content Include="Img\index\hirings.jpg" />
+    <Content Include="Img\index\index_contactus.jpg" />
+    <Content Include="Img\index\index_hiring.jpg" />
+    <Content Include="Img\index\index_introduction.jpg" />
+    <Content Include="Img\index\index_procategory.jpg" />
+    <Content Include="Img\index\loading.gif" />
+    <Content Include="Img\index\login.jpg" />
+    <Content Include="Img\index\login1.jpg" />
+    <Content Include="Img\index\loginedbg.jpg" />
+    <Content Include="Img\index\logintl.jpg" />
+    <Content Include="Img\index\logo.jpg" />
+    <Content Include="Img\index\more.jpg" />
+    <Content Include="Img\index\more1.jpg" />
+    <Content Include="Img\index\productcate.jpg" />
+    <Content Include="Img\index\productlst.jpg" />
+    <Content Include="Img\index\reg.jpg" />
+    <Content Include="Img\index\reg1.jpg" />
+    <Content Include="Img\index\searchProduct.jpg" />
+    <Content Include="Img\index\spline.jpg" />
+    <Content Include="Img\index\unknown.jpg" />
+    <Content Include="Img\intro\introduction.jpg" />
+    <Content Include="Img\logo\logo.jpg" />
+    <Content Include="Img\menu\btop.png" />
+    <Content Include="Img\menu\menubg.png" />
+    <Content Include="Img\orders\myorders.jpg" />
+    <Content Include="Img\orders\payment.jpg" />
+    <Content Include="Img\orders\payment1.jpg" />
+    <Content Include="Img\orders\popcancel.jpg" />
+    <Content Include="Img\orders\popcancel1.jpg" />
+    <Content Include="Img\orders\popsure.jpg" />
+    <Content Include="Img\orders\popsure1.jpg" />
+    <Content Include="Img\orders\search.jpg" />
+    <Content Include="Img\orders\search1.jpg" />
+    <Content Include="Img\orders\signed.jpg" />
+    <Content Include="Img\orders\signed1.jpg" />
+    <Content Include="Img\orders\stedproduct.jpg" />
+    <Content Include="Img\orders\stedproduct1.jpg" />
+    <Content Include="Img\orders\submitorder.jpg" />
+    <Content Include="Img\orders\submitorder1.jpg" />
+    <Content Include="Img\orders\update.jpg" />
+    <Content Include="Img\orders\update1.jpg" />
+    <Content Include="Img\pic\01.png" />
+    <Content Include="Img\pic\02.png" />
+    <Content Include="Img\pic\cartoon.jpg" />
+    <Content Include="Img\pic\niceday.jpg" />
+    <Content Include="Img\pic\searchProduct.jpg" />
+    <Content Include="Img\pic\云.jpg" />
+    <Content Include="Img\pic\人.jpg" />
+    <Content Include="Img\pic\人2.jpg" />
+    <Content Include="Img\pic\圣诞.jpg" />
+    <Content Include="Img\pic\多肉.jpg" />
+    <Content Include="Img\pic\多肉礼.jpg" />
+    <Content Include="Img\pic\女王喵.jpg" />
+    <Content Include="Img\pic\情人泪.jpg" />
+    <Content Include="Img\pic\望.jpg" />
+    <Content Include="Img\pic\格子.jpg" />
+    <Content Include="Img\pic\格子图.jpg" />
+    <Content Include="Img\pic\海.jpg" />
+    <Content Include="Img\pic\猫hp.jpg" />
+    <Content Include="Img\pic\第三者.jpg" />
+    <Content Include="Img\pic\肥喵.jpg" />
+    <Content Include="Img\pic\花.jpg" />
+    <Content Include="Img\pic\观音莲.jpg" />
+    <Content Include="Img\pic\郁金香.jpg" />
+    <Content Include="Img\pic\银杏.jpg" />
+    <Content Include="Img\product\clear.jpg" />
+    <Content Include="Img\product\clear1.jpg" />
+    <Content Include="Img\product\delete.jpg" />
+    <Content Include="Img\product\delete1.jpg" />
+    <Content Include="Img\product\details.gif" />
+    <Content Include="Img\product\procategory.jpg" />
+    <Content Include="Img\product\productlst_lst.jpg" />
+    <Content Include="Img\product\productorders.jpg" />
+    <Content Include="Img\product\product_details.jpg" />
+    <Content Include="Img\product\save.jpg" />
+    <Content Include="Img\product\save1.jpg" />
+    <Content Include="Img\product\update.jpg" />
+    <Content Include="Img\product\update1.jpg" />
+    <Content Include="Img\ptree\col.gif" />
+    <Content Include="Img\ptree\exp.gif" />
+    <Content Include="Img\ptree\file.gif" />
+    <Content Include="Img\ptree\folder.gif" />
+    <Content Include="Img\ptree\root.gif" />
+    <Content Include="Img\recuitment\recuitment.jpg" />
+    <Content Include="Img\searchProduct.jpg" />
+    <Content Include="Img\tree\col.gif" />
+    <Content Include="Img\tree\exp.gif" />
+    <Content Include="Img\tree\file.gif" />
+    <Content Include="Img\tree\folder.gif" />
+    <Content Include="Img\tree\root.gif" />
+    <Content Include="Img\watermark\default.jpg" />
+    <Content Include="Img\watermark\default_index.jpg" />
+    <Content Include="Img\watermark\default_lst.jpg" />
+    <Content Include="Img\watermark\watermark.png" />
+    <Content Include="Img\weather\0.gif" />
+    <Content Include="Img\weather\1.gif" />
+    <Content Include="Img\weather\10.gif" />
+    <Content Include="Img\weather\11.gif" />
+    <Content Include="Img\weather\12.gif" />
+    <Content Include="Img\weather\13.gif" />
+    <Content Include="Img\weather\14.gif" />
+    <Content Include="Img\weather\15.gif" />
+    <Content Include="Img\weather\16.gif" />
+    <Content Include="Img\weather\17.gif" />
+    <Content Include="Img\weather\18.gif" />
+    <Content Include="Img\weather\19.gif" />
+    <Content Include="Img\weather\2.gif" />
+    <Content Include="Img\weather\20.gif" />
+    <Content Include="Img\weather\21.gif" />
+    <Content Include="Img\weather\22.gif" />
+    <Content Include="Img\weather\23.gif" />
+    <Content Include="Img\weather\24.gif" />
+    <Content Include="Img\weather\25.gif" />
+    <Content Include="Img\weather\26.gif" />
+    <Content Include="Img\weather\27.gif" />
+    <Content Include="Img\weather\28.gif" />
+    <Content Include="Img\weather\29.gif" />
+    <Content Include="Img\weather\3.gif" />
+    <Content Include="Img\weather\30.gif" />
+    <Content Include="Img\weather\31.gif" />
+    <Content Include="Img\weather\4.gif" />
+    <Content Include="Img\weather\5.gif" />
+    <Content Include="Img\weather\6.gif" />
+    <Content Include="Img\weather\7.gif" />
+    <Content Include="Img\weather\8.gif" />
+    <Content Include="Img\weather\9.gif" />
+    <Content Include="Img\weather\a_0.gif" />
+    <Content Include="Img\weather\a_1.gif" />
+    <Content Include="Img\weather\a_10.gif" />
+    <Content Include="Img\weather\a_11.gif" />
+    <Content Include="Img\weather\a_12.gif" />
+    <Content Include="Img\weather\a_13.gif" />
+    <Content Include="Img\weather\a_14.gif" />
+    <Content Include="Img\weather\a_15.gif" />
+    <Content Include="Img\weather\a_16.gif" />
+    <Content Include="Img\weather\a_17.gif" />
+    <Content Include="Img\weather\a_18.gif" />
+    <Content Include="Img\weather\a_19.gif" />
+    <Content Include="Img\weather\a_2.gif" />
+    <Content Include="Img\weather\a_20.gif" />
+    <Content Include="Img\weather\a_21.gif" />
+    <Content Include="Img\weather\a_22.gif" />
+    <Content Include="Img\weather\a_23.gif" />
+    <Content Include="Img\weather\a_24.gif" />
+    <Content Include="Img\weather\a_25.gif" />
+    <Content Include="Img\weather\a_26.gif" />
+    <Content Include="Img\weather\a_27.gif" />
+    <Content Include="Img\weather\a_28.gif" />
+    <Content Include="Img\weather\a_29.gif" />
+    <Content Include="Img\weather\a_3.gif" />
+    <Content Include="Img\weather\a_30.gif" />
+    <Content Include="Img\weather\a_31.gif" />
+    <Content Include="Img\weather\a_4.gif" />
+    <Content Include="Img\weather\a_5.gif" />
+    <Content Include="Img\weather\a_6.gif" />
+    <Content Include="Img\weather\a_7.gif" />
+    <Content Include="Img\weather\a_8.gif" />
+    <Content Include="Img\weather\a_9.gif" />
+    <Content Include="Img\weather\a_nothing.gif" />
+    <Content Include="Img\weather\b_0.gif" />
+    <Content Include="Img\weather\b_1.gif" />
+    <Content Include="Img\weather\b_10.gif" />
+    <Content Include="Img\weather\b_11.gif" />
+    <Content Include="Img\weather\b_12.gif" />
+    <Content Include="Img\weather\b_13.gif" />
+    <Content Include="Img\weather\b_14.gif" />
+    <Content Include="Img\weather\b_15.gif" />
+    <Content Include="Img\weather\b_16.gif" />
+    <Content Include="Img\weather\b_17.gif" />
+    <Content Include="Img\weather\b_18.gif" />
+    <Content Include="Img\weather\b_19.gif" />
+    <Content Include="Img\weather\b_2.gif" />
+    <Content Include="Img\weather\b_20.gif" />
+    <Content Include="Img\weather\b_21.gif" />
+    <Content Include="Img\weather\b_22.gif" />
+    <Content Include="Img\weather\b_23.gif" />
+    <Content Include="Img\weather\b_24.gif" />
+    <Content Include="Img\weather\b_25.gif" />
+    <Content Include="Img\weather\b_26.gif" />
+    <Content Include="Img\weather\b_27.gif" />
+    <Content Include="Img\weather\b_28.gif" />
+    <Content Include="Img\weather\b_29.gif" />
+    <Content Include="Img\weather\b_3.gif" />
+    <Content Include="Img\weather\b_30.gif" />
+    <Content Include="Img\weather\b_31.gif" />
+    <Content Include="Img\weather\b_4.gif" />
+    <Content Include="Img\weather\b_5.gif" />
+    <Content Include="Img\weather\b_6.gif" />
+    <Content Include="Img\weather\b_7.gif" />
+    <Content Include="Img\weather\b_8.gif" />
+    <Content Include="Img\weather\b_9.gif" />
+    <Content Include="Img\weather\b_nothing.gif" />
+    <Content Include="Img\weather\nothing.gif" />
+    <Content Include="Img\weather\Read me.txt" />
+    <Content Include="Img\weather\r_b.gif" />
+    <Content Include="Img\weather\r_t1.gif" />
+    <Content Include="Img\weather\tem1.gif" />
+    <Content Include="Img\weather\tem2.gif" />
+    <Content Include="Img\weather\tem3.gif" />
+    <Content Include="Img\weather\tem4.gif" />
+    <Content Include="Img\weather\tem5.gif" />
+    <Content Include="Img\wode\logo.png" />
+    <Content Include="Img\主页.png" />
+    <Content Include="Img\人2.jpg" />
+    <Content Include="Img\猫hp.jpg" />
+    <Content Include="Img\肥喵.jpg" />
+    <Content Include="JS\jquery-1.4.2.min.js" />
+    <Content Include="ProductImg\010010001\010010001.jpg" />
+    <Content Include="ProductImg\010010002\010010002.jpg" />
+    <Content Include="ProductImg\010010003\010010003.jpg" />
+    <Content Include="ProductImg\010010004\010010004.jpg" />
+    <Content Include="ProductImg\010010005\010010005.jpg" />
+    <Content Include="ProductImg\010010006\010010006.jpg" />
+    <Content Include="ProductImg\010010007\010010007.jpg" />
+    <Content Include="ProductImg\010010008\010010008.jpg" />
+    <Content Include="ProductImg\010010009\010010009.jpg" />
+    <Content Include="ProductImg\010020001\010020001.jpg" />
+    <Content Include="ProductImg\010020002\010020002.jpg" />
+    <Content Include="ProductImg\010030001\010030001.jpg" />
+    <Content Include="ProductImg\010030002\010030002.jpg" />
+    <Content Include="ProductImg\020010001\020010001.jpg" />
+    <Content Include="ProductImg\020010002\020010002.jpg" />
+    <Content Include="ProductImg\020020001\020020001.jpg" />
+    <Content Include="ProductImg\020020002\020020002.jpg" />
+    <Content Include="ProductImg\030010001\030010001.jpg" />
+    <Content Include="ProductImg\030020001\030020001.jpg" />
+    <Content Include="ProductImg\040010001\040010001.jpg" />
+    <Content Include="ProductImg\040010002\040010002.jpg" />
+    <Content Include="ProductImg\040020001\040020001.jpg" />
+    <Content Include="ProductImg\040030001\040030001.jpg" />
+    <Content Include="VerifycodeAdmin.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="View\Index.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="View\FMaster.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1353</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

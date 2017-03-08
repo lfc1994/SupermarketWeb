@@ -1,0 +1,7 @@
+d:\桌面文件\桌面\ProductWeb\ProductProc\ProductManage\bin\ProductManage.dll
+d:\桌面文件\桌面\ProductWeb\ProductProc\ProductManage\bin\ProductManage.pdb
+d:\桌面文件\桌面\ProductWeb\ProductProc\ProductManage\bin\AspNetPager.dll
+d:\桌面文件\桌面\ProductWeb\ProductProc\ProductManage\bin\ZLTextBox.dll
+d:\桌面文件\桌面\ProductWeb\ProductProc\ProductManage\obj\Debug\ResolveAssemblyReference.cache
+d:\桌面文件\桌面\ProductWeb\ProductProc\ProductManage\obj\Debug\ProductManage.dll
+d:\桌面文件\桌面\ProductWeb\ProductProc\ProductManage\obj\Debug\ProductManage.pdb
